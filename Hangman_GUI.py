@@ -4,7 +4,7 @@ window = Tk()
 
 #Creating Window
 window.title("Hangman")
-window.geometry("300x300")
+window.geometry("275x250")
 
 #Creating Widgets
 lblEnterLetter = Label(window, text="Enter Letter:")
@@ -12,8 +12,8 @@ txtEnterLetter = Entry(window)
 btnGuessLetter = Button(window, text="Submit Letter")
 
 #Packing
-lblEnterLetter.pack()
-txtEnterLetter.pack()
-btnGuessLetter.pack()
+lblEnterLetter.grid(row = 1, column = 1)
+txtEnterLetter.grid(row = 1, column = 2)
+btnGuessLetter.grid(row = 1, column = 3)
 
 window.mainloop()
